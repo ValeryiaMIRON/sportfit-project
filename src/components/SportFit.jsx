@@ -13,10 +13,12 @@ import arrowLeft from "../assets/images/right.png";
 function SportFit() {
   const images = [first, second, third, fourth, fifth];
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [message, setMessage] = useState("");
   const carouselRef = useRef(null);
 
   const handleLeadClick = () => {
-    console.log("FB Pixel event: Lead");
+    setMessage("Событие Lead сработало!");
+    setTimeout(() => setMessage(""), 2000);
   };
 
   const scrollLeft = () => {
@@ -60,7 +62,7 @@ function SportFit() {
 
 
   return (
-    <div className="relative w-full overflow-hidden bg-black">
+    <main className="relative w-full overflow-hidden bg-black">
       <div className="hidden md:block absolute w-full h-full bg-[url('./assets/images/background.png')] bg-cover bg-right-top"></div>
 
       <div className="block lg:hidden absolute w-full h-full bg-[url('./assets/images/background-mobile.png')] bg-cover bg-center" style={{ backgroundPosition: 'center 9%' }}></div>
@@ -72,7 +74,7 @@ function SportFit() {
           <span />
         </div>
 
-        <div className="content">
+        <section className="content">
           <h1 className="font-bold text-[26px] md:text-[30px] 2xl:text-[65px] text-center lg:text-left">
             НОВАЯ ПРОГРАММА
           </h1>
@@ -86,12 +88,18 @@ function SportFit() {
             ПОПРОБОВАТЬ БЕСПЛАТНО
           </button>
 
-          <div className="font-bold text-[28px] lg:text-[35px] mt-[100px] lg:mt-0 lg:pt-[400px] 2xl:pt-[650px] pb-[60px]">
+          {message && (
+            <div className="fixed top-5 left-1/2 -translate-x-1/2 bg-[#41B329] text-white px-4 py-2 rounded shadow-lg z-50">
+              {message}
+            </div>
+          )}
+
+          <h3 className="font-bold text-[28px] lg:text-[35px] mt-[100px] lg:mt-0 lg:pt-[400px] 2xl:pt-[650px] pb-[60px]">
             ПРОГРАММА
-          </div>
+          </h3>
 
           {/* КАРУСЕЛЬ */}
-          <div className="relative mb-[70px] px-0 md:px-[131px]">
+          <section className="relative mb-[70px] px-0 md:px-[131px]">
             <button onClick={scrollLeft} className="hidden lg:flex absolute left-[20px] top-1/2 -translate-y-1/2 rounded-full items-center justify-center z-10">
               <img src={arrowLeft} alt="arrow left" className="max-w-[77px] max-h-[77px]" />
             </button>
@@ -118,11 +126,11 @@ function SportFit() {
                 />
               ))}
             </div>
-          </div>
+          </section>
           {/* КОНЕЦ КАРУСЕЛИ */}
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
   );
 }
 
