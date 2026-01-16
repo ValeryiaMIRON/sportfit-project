@@ -1,7 +1,7 @@
 {
   "name": "sportfit",
   "version": "0.1.0",
-  "homepage": "https://github.com/ValeryiaMIRON/sportfit-project",
+  "homepage": "https://valeryiamiron.github.io/sportfit-project/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
