@@ -17,7 +17,7 @@ function SportFit() {
   const carouselRef = useRef(null);
 
   const handleLeadClick = () => {
-    setMessage("Событие Lead сработало!");
+    setMessage("Событие сработало!");
     setTimeout(() => setMessage(""), 2000);
   };
 
