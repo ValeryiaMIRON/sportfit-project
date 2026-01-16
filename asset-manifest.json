@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sportfit-project/static/css/main.df495e51.css",
-    "main.js": "/sportfit-project/static/js/main.3c5267e9.js",
+    "main.css": "/sportfit-project/static/css/main.70c17475.css",
+    "main.js": "/sportfit-project/static/js/main.0dbad882.js",
     "static/js/453.c652711b.chunk.js": "/sportfit-project/static/js/453.c652711b.chunk.js",
     "static/media/background.png": "/sportfit-project/static/media/background.1ac9b2c2cb15d3b0906e.png",
     "static/media/background-mobile.png": "/sportfit-project/static/media/background-mobile.c6ffb0af160150ee1534.png",
@@ -11,12 +11,12 @@
     "static/media/second.png": "/sportfit-project/static/media/second.9176dc242110a1285c8c.png",
     "static/media/first.png": "/sportfit-project/static/media/first.cf182caa965eb237aa89.png",
     "index.html": "/sportfit-project/index.html",
-    "main.df495e51.css.map": "/sportfit-project/static/css/main.df495e51.css.map",
-    "main.3c5267e9.js.map": "/sportfit-project/static/js/main.3c5267e9.js.map",
+    "main.70c17475.css.map": "/sportfit-project/static/css/main.70c17475.css.map",
+    "main.0dbad882.js.map": "/sportfit-project/static/js/main.0dbad882.js.map",
     "453.c652711b.chunk.js.map": "/sportfit-project/static/js/453.c652711b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df495e51.css",
-    "static/js/main.3c5267e9.js"
+    "static/css/main.70c17475.css",
+    "static/js/main.0dbad882.js"
   ]
 }
